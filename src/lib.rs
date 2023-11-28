@@ -194,7 +194,7 @@ pub fn create_transaction(
 ) -> Result<u32, Error> {
     let param:TransactionParams = ctx.parameter_cursor().get()?;
     if let None = host.state().pending_transactions.get(&param.index){
-        let proposal = TransactionProposal::new(param.index,param.amount,param.receiver,0,ctx.sender());
+        let proposal = TransactionProposal::new(param.index,param.amount,param.receiver,ctx.sender());
             host.state_mut().pending_transactions.insert(param.index, proposal);
             Ok(param.index)
     }else{
