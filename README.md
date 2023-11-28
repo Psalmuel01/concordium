@@ -1,12 +1,12 @@
 # multisig-contract
 
-# Introduction
+# Overview
 
 This project implements a multi-signature smart contract on the Concordium blockchain. It also includes scripts that interact with the blockchain (testnet).
 
-# Functionalities of the Smart Contract
+# Smart Contract Functions
 
-The smart contract supports the following functionalities:
+The smart contract implements the folowing functions:
 
 Write functions:
 
@@ -38,11 +38,11 @@ Sent transaction with hash: b9ad7f9eabaedd45b7cdec88a784c9fe53606aff18dced28e9d8
 Transaction finalized: tx_hash=b9ad7f9eabaedd45b7cdec88a784c9fe53606aff18dced28e9d8e948207dc9a1 module_ref=f211526f3850a523ddf8cdc322bd5cbd37fae67a4791e489bde15947c4b75c08
 ```
 
-### A screenshot of the contract initializing on the concordium block explorer
+### Deploying on the concordium block explorer
 
 ![Screenshot of deployment](./img/deploy.png)
 
-The code was instantiated with the following command:
+The code was initialized with the following command:
 
 ```
 ./concordium-client_6.1.0-1 --grpc-ip node.testnet.concordium.com contract init ccd_multisig --parameter-json init.json --contract ccd_multisig --energy 10000 --sender mywallet
@@ -56,7 +56,7 @@ Transaction '80fb23c53a03e45d7bd8beac26dc2134db36848672ef58d7487e3adc126834a1' s
 Transaction is finalized into block 08b3858b653b71684d21d3ad47d124a11c2c4fe58870f5bfd9a3e8196edffdb8 with status "success" and cost 8.398065 CCD (1988 NRG).
 ```
 
-### A screenshot of the contract updating on the concordium block explorer
+### Initializing on the concordium block explorer
 
 ![Screenshot of deployment](./img/instance.png)
 
@@ -74,7 +74,7 @@ Transaction 'dbb2d6541e5f28472e3dce06cdd05cdbad8a8f410a6408ffd56909cc36141327' s
 Transaction is finalized into block 869b72f34d15f970007a708de8d02b110b2bc3fcf23dd7724716b3b99db5020a with status "success" and cost 5.859172 CCD (1389 NRG).
 ```
 
-### A screenshot of the contract updating on the concordium block explorer
+### Updating on the concordium block explorer
 
 ![Screenshot of deployment](./img/update.png)
 
